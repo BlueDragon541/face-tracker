@@ -33,7 +33,7 @@ function playMyVideo(){
     console.log("Now playing webcam...");
 
     // Start Facetracker
-    //startFT();
+    startFT();
 
     // Draw my face
     drawMyFace();
@@ -87,7 +87,7 @@ function drawMyFaceDots(positions){
   for(let i=0;i<positions.length;i++){
     const posX = positions[i][0];
     const posY = positions[i][1];
-    // draw the dot with drawCircle
+    drawCircle(posX,posY, 'copper');
     if(debugMode){
         // write the dot label on the screen with drawText
     }
