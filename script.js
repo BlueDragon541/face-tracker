@@ -74,7 +74,7 @@ function drawMyFace(){
 }
 
 function setMyFaceScore(){
-  const score = 0; /*getFTScore();*/
+  const score = getFTScore();
   scoreEl.innerText = Math.round(score);
 }
 
@@ -87,9 +87,9 @@ function drawMyFaceDots(positions){
   for(let i=0;i<positions.length;i++){
     const posX = positions[i][0];
     const posY = positions[i][1];
-    drawCircle(posX,posY, 'copper');
+    drawCircle(posX,posY, 'yellow');
     if(debugMode){
-        // write the dot label on the screen with drawText
+      drawText(i,posX,posY,);        // write the dot label on the screen with drawText
     }
   }
 }
